@@ -1,7 +1,7 @@
 {
     "name": "horde/backup",
     "description": "Backup and restore library",
-    "type": "library",
+    "type": "horde-library",
     "homepage": "https://www.horde.org",
     "license": "BSD",
     "authors": [
@@ -12,26 +12,23 @@
         }
     ],
     "version": "1.0.0alpha1",
-    "time": "2017-11-11",
+    "time": "2020-10-27",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.4 || ^7",
-        "pear-pear.horde.org/Horde_Compress": "^2.2",
-        "pear-pear.horde.org/Horde_Exception": "^2",
-        "pear-pear.horde.org/Horde_Pack": "^1",
-        "pear-pear.horde.org/Horde_Translation": "^2"
+        "horde/compress": "dev-master",
+        "horde/exception": "dev-master",
+        "horde/pack": "dev-master",
+        "horde/translation": "dev-master"
     },
     "suggest": {
-        "pear-pear.horde.org/Horde_Test": "^2"
-    },
-    "replace": {
-        "pear-pear.horde.org/Horde_Backup": "1.*",
-        "pear-horde/Horde_Backup": "1.*"
+        "horde/test": "^2"
     },
     "autoload": {
         "psr-0": {
